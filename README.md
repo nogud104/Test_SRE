@@ -1,4 +1,4 @@
- Test_SRE
+#Test_SRE
 
 Deploy RabbitMQ cluster on k8s 
 
