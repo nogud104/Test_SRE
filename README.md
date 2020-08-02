@@ -1,54 +1,53 @@
 # Test_SRE
 
-<p><strong>Deploy RabbitMQ cluster on k8s</strong></p>
+## Deploy RabbitMQ cluster on k8s
  https://habr.com/ru/company/true_engineering/blog/419817/
  https://www.rabbitmq.com/clustering.html
  https://www.rabbitmq.com/cluster-formation.html
-<p></p>
-<p><strong>Migration from vm to k8s cluster</strong>></p>
+
+## Migration from vm to k8s cluster
  https://habr.com/ru/company/flant/blog/450662/ 
-<p></p>
-<p><strong>Documentation</strong></p>
+
+### Documentation
 
  https://kubernetes.io/
  https://www.rabbitmq.com
  https://www.rabbitmq.com/kubernetes/operator/operator-overview.html
 
-<p>полное зеркалирование всех содержащихся в кластере данных, что позволяет работать RabbiqMQ</p>
-<p>в случае в случае работоспособности только одной ноды.</p>
-<p>Под сомнением необходимость deploy StatefulSet RabbitMQ, при кластерной конфигурации.</p>
-<p>для чего сохранять состояние pod'а, если есть зеркалирование всех содержащихся в кластере данных.</p>
-<p></p>
-<p><strong>Использована кластерная архитектура RabbitMQ.</strong></p>
-<p> вариант несколько кластеров RabbitMQ</p>
-<p>пример:3 ноды k8s, два pods на каждой ноде,6 pods объедены в два кластера,</p>
-<p>зеркалирование очереди между кластерами.</p>
-<p></p>
-<p><strong>Повысит:</strong></p>
-<p>отказоустойчивость, избыточность, но не маштабируемость.</p>
+полное зеркалирование всех содержащихся в кластере данных, что позволяет работать RabbiqMQ
+в случае в случае работоспособности только одной ноды.
+Под сомнением необходимость deploy StatefulSet RabbitMQ, при кластерной конфигурации.
+для чего сохранять состояние pod'а, если есть зеркалирование всех содержащихся в кластере данных.
+
+## Использована кластерная архитектура RabbitMQ.
+ вариант несколько кластеров RabbitMQ
+пример:3 ноды k8s, два pods на каждой ноде,6 pods объедены в два кластера,
+зеркалирование очереди между кластерами.
+
+### Повысит:
+отказоустойчивость, избыточность, но не маштабируемость.
 
 https://habr.com/ru/company/itsumma/blog/471858/
 https://club.directum.ru/post/255245
 
-<p><strong>возможный тюннинг RabbitMQ:</strong></p>
-<p>ограничение длины очереди,</p>
-<p>использования Lazy queues(в качестве сохранения, возможно лучше использовать отдельный pods RabbitMQ)</p>
-<p>ограничение размера TTL или или max-lenght</p>
+### возможный тюннинг RabbitMQ:
+ограничение длины очереди,
+использования Lazy queues(в качестве сохранения, возможно лучше использовать отдельный pods RabbitMQ)
+ограничение размера TTL или или max-lenght
 
-# минусы:
-<p>ресурсоемкость, стоимость владения.</p>
+#### минусы:
+ресурсоемкость, стоимость владения.
  
-# плюсы:
-  <p>отказоустойчивость, в меньшей степени маштабируемость.</p>
+#### плюсы:
+  отказоустойчивость, в меньшей степени маштабируемость.
 
-<p>выбор подхода обусловлен комбинацией различных методов, что повышает отказоустойчивость и маштабирумость.</p>
+выбор подхода обусловлен комбинацией различных методов, что повышает отказоустойчивость и маштабирумость.
 
-# Update
-<p>развернул стенд:</p>
-<p>для развертования в YandexCloud(TRIAL) использовал terraform 0.12.29, образ для развертывания взят из yandex repo.</p>
+### Update
+развернул стенд:
+для развертования в YandexCloud(TRIAL) использовал terraform 0.12.29, образ для развертывания взят из yandex repo.
     
-    
-# documentation
+#### documentation
   https://www.terraform.io/
   https://github.com/selectel/terraform-examples
   https://cloud.yandex.ru/docs/solutions/infrastructure-management/terraform-quickstart
