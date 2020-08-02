@@ -9,7 +9,7 @@
  https://habr.com/ru/company/flant/blog/450662/ 
 
 <p><strong>Documentation</strong></p>
-<p></p>
+
  https://kubernetes.io/
  https://www.rabbitmq.com
  https://www.rabbitmq.com/kubernetes/operator/operator-overview.html
@@ -35,10 +35,11 @@ https://club.directum.ru/post/255245
 <p>использования Lazy queues(в качестве сохранения, возможно лучше использовать отдельный pods RabbitMQ)</p>
 <p>ограничение размера TTL или или max-lenght</p>
 
-<p>минусы:</p> 
+# <p><strong>минусы:</strong></p> 
 <p>ресурсоемкость, стоимость владения.</p>
-<p>плюсы:</p> 
-<p>отказоустойчивость, в меньшей степени маштабируемость.</p>
+ 
+# <p><strong>плюсы:</strong></p> 
+  <p>отказоустойчивость, в меньшей степени маштабируемость.</p>
 
 <p>выбор подхода обусловлен комбинацией различных методов, что повышает отказоустойчивость и маштабирумость.</p>
 
@@ -47,8 +48,7 @@ https://club.directum.ru/post/255245
 <p>для развертования в YandexCloud(TRIAL) использовал terraform 0.12.29, образ для развертывания взят из yandex repo.</p>
     
     
-<strong>documentation</strong></p>
-
+# <strong>documentation</strong></p>
   https://www.terraform.io/
   https://github.com/selectel/terraform-examples
   https://cloud.yandex.ru/docs/solutions/infrastructure-management/terraform-quickstart
