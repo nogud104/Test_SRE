@@ -4,10 +4,10 @@
  https://habr.com/ru/company/true_engineering/blog/419817/
  https://www.rabbitmq.com/clustering.html
  https://www.rabbitmq.com/cluster-formation.html
-
+<p></p>
 <p><strong>Migration from vm to k8s cluster</strong>></p>
  https://habr.com/ru/company/flant/blog/450662/ 
-
+<p></p>
 <p><strong>Documentation</strong></p>
 
  https://kubernetes.io/
