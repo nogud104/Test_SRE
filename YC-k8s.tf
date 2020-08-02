@@ -1,9 +1,9 @@
 #токен отозван
 provider "yandex" {
-  token     = "AgAAAAAHE9jmAATuwQWS6LeQiEilr_MlU6qqj0w"
-  cloud_id  = "b1g2qi381jifub12uga3"
-  folder_id = "b1gnppu4ijh8tv2j7009"
-  zone      = "ru-central1-a"
+  token     = "f${var.token}"
+  cloud_id  = "f${var.cloud_id}"
+  folder_id = "${var.folder_id}"
+  zone      = "${var.zone}"
 }
 
 resource "yandex_compute_instance" "vm-1" {
@@ -11,7 +11,7 @@ resource "yandex_compute_instance" "vm-1" {
 
   resources {
     cores  = 2
-    memory = 2
+    memory = 8
   }
 
   boot_disk {
