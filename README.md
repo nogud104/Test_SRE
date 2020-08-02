@@ -1,5 +1,5 @@
 # Test_SRE
-<div>style="margin-top: 36pt; margin-bottom: 8pt;">
+<div>style="margin-top: 36pt; margin-bottom: 8pt;"
 <p>Deploy RabbitMQ cluster on k8s</p>
 
  https://habr.com/ru/company/true_engineering/blog/419817/
