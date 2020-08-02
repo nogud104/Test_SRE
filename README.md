@@ -18,13 +18,13 @@
 <p>в случае в случае работоспособности только одной ноды.</p>
 <p>Под сомнением необходимость deploy StatefulSet RabbitMQ, при кластерной конфигурации.</p>
 <p>для чего сохранять состояние pod'а, если есть зеркалирование всех содержащихся в кластере данных.</p>
-
+<p></p>
 <p><strong>Использована кластерная архитектура RabbitMQ.</strong></p>
 <p> вариант несколько кластеров RabbitMQ</p>
 <p>пример:3 ноды k8s, два pods на каждой ноде,6 pods объедены в два кластера,</p>
 <p>зеркалирование очереди между кластерами.</p>
-
-<p>Повысит:</p>
+<p></p>
+<p><strong>Повысит:</strong></p>
 <p>отказоустойчивость, избыточность, но не маштабируемость.</p>
 
 https://habr.com/ru/company/itsumma/blog/471858/
@@ -35,10 +35,10 @@ https://club.directum.ru/post/255245
 <p>использования Lazy queues(в качестве сохранения, возможно лучше использовать отдельный pods RabbitMQ)</p>
 <p>ограничение размера TTL или или max-lenght</p>
 
-# <p><strong>минусы:</strong></p> 
+# минусы:
 <p>ресурсоемкость, стоимость владения.</p>
  
-# <p><strong>плюсы:</strong></p> 
+# плюсы:
   <p>отказоустойчивость, в меньшей степени маштабируемость.</p>
 
 <p>выбор подхода обусловлен комбинацией различных методов, что повышает отказоустойчивость и маштабирумость.</p>
@@ -48,7 +48,7 @@ https://club.directum.ru/post/255245
 <p>для развертования в YandexCloud(TRIAL) использовал terraform 0.12.29, образ для развертывания взят из yandex repo.</p>
     
     
-# <strong>documentation</strong></p>
+# documentation
   https://www.terraform.io/
   https://github.com/selectel/terraform-examples
   https://cloud.yandex.ru/docs/solutions/infrastructure-management/terraform-quickstart
