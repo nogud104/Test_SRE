@@ -1,4 +1,4 @@
-
+#токен отозван
 provider "yandex" {
   token     = "AgAAAAAHE9jmAATuwQWS6LeQiEilr_MlU6qqj0w"
   cloud_id  = "b1g2qi381jifub12uga3"
