@@ -1,6 +1,6 @@
 # Test_SRE
-<div>style="margin-top: 36pt; margin-bottom: 8pt;"
-<p>Deploy RabbitMQ cluster on k8s</p>
+
+<p><strong>Deploy RabbitMQ cluster on k8s</strong></p>
 
  https://habr.com/ru/company/true_engineering/blog/419817/
  https://www.rabbitmq.com/clustering.html
@@ -22,39 +22,36 @@
 <p>для чего сохранять состояние pod'а, если есть зеркалирование всех содержащихся в кластере данных.</p>
 
 <p><strong>Использована кластерная архитектура RabbitMQ.</strong></p>
- вариант несколько кластеров RabbitMQ
- пример:3 ноды k8s, два pods на каждой ноде,6 pods объедены в два кластера,
- зеркалирование очереди между кластерами.
-<p><red>Повысит:</red></p>
- отказоустойчивость, избыточность, но не маштабируемость.
+<p> вариант несколько кластеров RabbitMQ</p>
+<p>пример:3 ноды k8s, два pods на каждой ноде,6 pods объедены в два кластера,</p>
+<p>зеркалирование очереди между кластерами.</p>
+
+<p>Повысит:</p>
+ <p>отказоустойчивость, избыточность, но не маштабируемость.</p>
  
 https://habr.com/ru/company/itsumma/blog/471858/
 https://club.directum.ru/post/255245
- 
-  <p><strong><font color="yellow">возможный тюннинг RabbitMQ:</font color="blue"></strong></p>
-  <p> ограничение длины очереди,</p>
-  <p> использования Lazy queues(в качестве сохранения, возможно лучше использовать отдельный pods RabbitMQ)</p>
-  <p> ограничение размера TTL или или max-lenght</p>
+
+<p><strong>возможный тюннинг RabbitMQ:</strong></p>
+<p>ограничение длины очереди,</p>
+<p>использования Lazy queues(в качестве сохранения, возможно лучше использовать отдельный pods RabbitMQ)</p>
+<p>ограничение размера TTL или или max-lenght</p>
      
-<p><font color="blue">минусы:</font color="blue"></p> 
-    ресурсоемкость, стоимость владения.
-<p><font color="red">плюсы:</font color="red"></p>
-  отказоустойчивость, в меньшей степени маштабируемость.
-
-<p><green>выбор подхода обусловлен комбинацией различных методов, что повышает отказоустойчивость и маштабирумость.</green></p>
-
+<p>минусы:
+  ресурсоемкость, стоимость владения.</p>
+<p>плюсы:
+  отказоустойчивость, в меньшей степени маштабируемость.</p>
+  
+<p>выбор подхода обусловлен комбинацией различных методов, что повышает отказоустойчивость и маштабирумость.</p>
 
 # Update
-<p><green>развернул стенд:</green></p>
-  для развертования в <p><font color="yellow">YandexCloud(TRIAL)</p></font color="yellow"></p>использовал<p><font color="blue">terraform 0.12.29</font color="blue">,<p> 
-   образ для развертывания взят из yandex repo.
+<p>развернул стенд:</p>
+<p>для развертования в YandexCloud(TRIAL)использовалterraform 0.12.29, образ для развертывания взят из yandex repo.</p>
     
- 
-documentation   
+<><strong>documentation</strong></p>   
   https://www.terraform.io/
   https://github.com/selectel/terraform-examples
   https://cloud.yandex.ru/docs/solutions/infrastructure-management/terraform-quickstart
   https://cloud.croc.ru/blog/byt-v-teme/klaster-za-chas/
-</div>    
-  
+
    
