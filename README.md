@@ -1,4 +1,4 @@
-#Test_SRE
+# Test_SRE
 
 Deploy RabbitMQ cluster on k8s 
 
@@ -22,3 +22,8 @@ Documentation
 Под сомнением необходимость deploy StatefulSet RabbitMQ, при кластерной конфигурации.
 для чего сохранять состояние pod'а, если есть зеркалирование всех содержащихся в кластере данных.
 
+# Update
+развернул стенд:
+  terraform
+  YandeCloud(TRIAL)
+   
