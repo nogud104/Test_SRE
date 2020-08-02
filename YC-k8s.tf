@@ -1,17 +1,17 @@
-#токен отозван
 provider "yandex" {
   token     = "f${var.token}"
   cloud_id  = "f${var.cloud_id}"
   folder_id = "${var.folder_id}"
-  zone      = "${var.zone}"
 }
 
 resource "yandex_compute_instance" "vm-1" {
   name = "k8s-node1"
+  zone = "ru-central1-a"
 
   resources {
     cores  = 2
     memory = 8
+    core_fraction = 20
   }
 
   boot_disk {
@@ -33,10 +33,12 @@ resource "yandex_compute_instance" "vm-1" {
 
 resource "yandex_compute_instance" "vm-2" {
   name = "k8s-node2"
+  zone = "ru-central1-b"
 
   resources {
     cores  = 2
-    memory = 2
+    memory = 4
+    core_fraction = 20
   }
 
   boot_disk {
@@ -58,10 +60,12 @@ resource "yandex_compute_instance" "vm-2" {
 
 resource "yandex_compute_instance" "vm-3" {
   name = "k8s-node3"
+  zone = "ru-central1-c"
 
   resources {
     cores  = 2
-    memory = 2
+    memory = 4
+    core_fraction = 20
   }
 
   boot_disk {
