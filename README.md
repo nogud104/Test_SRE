@@ -46,6 +46,7 @@ https://club.directum.ru/post/255245
 ### Update
 развернул стенд:
 для развертования в YandexCloud(TRIAL) использовал terraform 0.12.29, образ для развертывания взят из yandex repo.
+configs в репозитории, все не успел.
     
 #### documentation
   https://www.terraform.io/
@@ -53,4 +54,4 @@ https://club.directum.ru/post/255245
   https://cloud.yandex.ru/docs/solutions/infrastructure-management/terraform-quickstart
   https://cloud.croc.ru/blog/byt-v-teme/klaster-za-chas/
 
-   
+# ***to be continue...***   02.08.2020
