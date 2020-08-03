@@ -43,7 +43,7 @@ https://club.directum.ru/post/255245
 ### Update
 развернул стенд:
 для развертования в YandexCloud(TRIAL) использовал terraform 0.12.29, образ для развертывания взят из yandex repo.
-configs в репозитории, все не успел.
+configs в репозитории.(в качстве среды развертывания можно использовать SaaS YandexCloud K8s)
     
 #### documentation
   https://www.terraform.io/
